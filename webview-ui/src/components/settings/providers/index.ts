@@ -29,6 +29,7 @@ export { VSCodeLM } from "./VSCodeLM"
 export { XAI } from "./XAI"
 // kilocode_change start
 export { OvhCloudAiEndpoints } from "./OvhCloud"
+export { GeminiCli } from "./GeminiCli"
 export { VirtualQuotaFallbackProvider } from "./VirtualQuotaFallbackProvider"
 export { Inception } from "./Inception"
 export { Synthetic } from "./Synthetic"
