@@ -39,6 +39,7 @@ export {
 	bedrockProviderSchema,
 	vertexProviderSchema,
 	geminiProviderSchema,
+	geminiCliProviderSchema,
 	mistralProviderSchema,
 	moonshotProviderSchema,
 	minimaxProviderSchema,
