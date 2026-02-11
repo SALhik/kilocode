@@ -218,6 +218,14 @@ export const geminiProviderSchema = baseProviderSchema.extend({
 	enableGrounding: z.boolean().optional(),
 })
 
+// Gemini CLI provider
+export const geminiCliProviderSchema = baseProviderSchema.extend({
+	provider: z.literal("gemini-cli"),
+	apiModelId: z.string().optional(),
+	geminiCliOAuthPath: z.string().optional(),
+	geminiCliProjectId: z.string().optional(),
+})
+
 // Mistral provider
 export const mistralProviderSchema = baseProviderSchema.extend({
 	provider: z.literal("mistral"),
@@ -421,6 +429,7 @@ export const providerConfigSchema = z.discriminatedUnion("provider", [
 	bedrockProviderSchema,
 	vertexProviderSchema,
 	geminiProviderSchema,
+	geminiCliProviderSchema,
 	mistralProviderSchema,
 	moonshotProviderSchema,
 	minimaxProviderSchema,
@@ -467,6 +476,7 @@ export type InceptionProviderConfig = z.infer<typeof inceptionProviderSchema>
 export type BedrockProviderConfig = z.infer<typeof bedrockProviderSchema>
 export type VertexProviderConfig = z.infer<typeof vertexProviderSchema>
 export type GeminiProviderConfig = z.infer<typeof geminiProviderSchema>
+export type GeminiCliProviderConfig = z.infer<typeof geminiCliProviderSchema>
 export type MistralProviderConfig = z.infer<typeof mistralProviderSchema>
 export type MoonshotProviderConfig = z.infer<typeof moonshotProviderSchema>
 export type MinimaxProviderConfig = z.infer<typeof minimaxProviderSchema>
