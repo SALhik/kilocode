@@ -83,6 +83,7 @@ export {
 	type BedrockProviderConfig,
 	type VertexProviderConfig,
 	type GeminiProviderConfig,
+	type GeminiCliProviderConfig,
 	type MistralProviderConfig,
 	type MoonshotProviderConfig,
 	type MinimaxProviderConfig,
