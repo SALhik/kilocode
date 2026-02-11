@@ -44,6 +44,7 @@ describe("Static Provider Models", () => {
 			"fireworks",
 			"featherless",
 			"claude-code",
+			"gemini-cli",
 		]
 
 		it.each(staticProviders)("should return non-empty models for %s provider", (provider) => {
